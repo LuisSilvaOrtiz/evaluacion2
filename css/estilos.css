@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'dancing-script';
+	src: url(../fuentes/DancingScript-Regular.ttf)
+}
+
+body {
+	color: black;
+	background: #02010a;
+	font-family: "dancing-script";
+	font-size: 16px;
+}
+
+#header {
+
+	background: #5b7989;
+	color: white;
+	padding: 0% 1%;
+	text-shadow: 2px 2px #02010a;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#titulo {
+	padding: 1% 0%;
+	font-size: 1.5em;
+	text-align: left;
+	flex: auto;
+}
+
+#menu {
+	padding: 1.2% 1%;
+	font-size: 1em;
+	text-align: right;
+	flex: auto;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	margin: 5px;
+}
+
+.menu {
+	text-decoration: underline;
+}
+
+.imagen {
+	width: 65%;
+	box-shadow: 2px 2px #02010a;
+}
+
+div img {
+	border: solid 2px black;
+}
+
+.icono {
+	width: 15px;
+}
+
+
+section {
+	text-align: center;
+}
+
+.central {
+	background-color: #82c3a6;
+	padding: 2% 10%;
+}
+
+#central {
+	border: none;
+}
+
+#secundaria {
+	background-color: #d5c75f;
+	padding: 2% 10%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#izquierda {
+
+	padding: 0%;
+	transition-property: transform: rotate;
+	transition-duration: 1s;
+}
+
+#izquierda:hover {
+	transform: rotate(10deg);
+}
+
+#derecha {
+	padding: 0%;
+	transition-property: transform: translate;
+	transition-duration: 1s;
+}
+
+#derecha:hover {
+	transform: translate(5px, -20px);
+}
+
+figcaption {
+	padding: -10% 0%;
+}
+
+#img1 {
+	-webkit-filter: blur(10px);
+}
+
+#img2 {
+	-webkit-filter: grayscale(100%);
+}
+
+#img3 {
+	-webkit-filter: sepia(90%);
+}
+
+#img4 {
+	-webkit-filter: grayscale(100%);
+}
+
+#img6 {
+	-webkit-filter: grayscale(100%);
+}
+
+#footer {
+	background: #C6d5c5;
+	padding: 1% 1% 5% 1%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#footer div {
+		padding: 0% 1.8% 2% 1.8%;
+	}
+
+p {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0%;
+}
+
+@keyframes animacion-slidein {
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+#contenido {
+	animation-name: animacion-slidein;
+	animation-duration: 0.5s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@media (min-width: 900px) {
+	#header {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	#contenido {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.secundaria {
+		background-color: #d5c75f;
+		display: flex;
+	}
+
+	#footer {
+		display: flex;
+		flex-flow: row wrap;
+	}
+}
+
+@media (max-width: 900px) {
+	#titulo {
+		text-align: center;
+	}
+
+	#menu {
+		text-align: center;
+	}
+}
